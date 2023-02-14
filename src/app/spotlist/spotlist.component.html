@@ -1,8 +1,12 @@
-<h1 *ngIf="isVisible">Mon composant: {{ spotlist }}</h1>
+<h1 *ngIf="isVisible">The Spot-List:🧑‍🎨 {{ spotlist }}</h1>
 
 <ul>
   <li *ngFor="let spot of spotlists">
-    {{ spot.name.value }} {{ spot.category.type }}
+    {{ spot.name.value }}
+    {{ spot.allowedVehicleType.value }}
+    {{ spot.status.value }}
+    {{ spot.availableSpotNumber.value }}
+    {{ spot.status.metadata.timestamp.value }}
   </li>
 </ul>
 
