@@ -1,0 +1,9 @@
+<h1 *ngIf="isVisible">Mon composant: {{ spotlist }}</h1>
+
+<ul>
+  <li *ngFor="let spot of spotlists">
+    {{ spot.name.value }} {{ spot.category.type }}
+  </li>
+</ul>
+
+<button (click)="sendMessage()">Send !</button>
