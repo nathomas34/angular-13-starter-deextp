@@ -89,7 +89,7 @@ export interface TotalSpotNumber {
   metadata: Metadata9;
 }
 
-export interface Spot {
+export interface Spotlist {
   id: string;
   type: string;
   allowedVehicleType: AllowedVehicleType;
