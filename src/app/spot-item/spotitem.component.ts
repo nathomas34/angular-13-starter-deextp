@@ -8,4 +8,5 @@ import { Spotlist } from '../spotlist/spotlist.interface';
 })
 export class SpotitemComponent {
   @Input() spot: Spotlist;
+  @Output() like = new EventEmitter();
 }

@@ -24,5 +24,6 @@ export class SpotlistComponent {
 
   sendMessage() {
     this.spotlistChange.emit(this.spotlist);
+    console.log(this.spotlist);
   }
 }
