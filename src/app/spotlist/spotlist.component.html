@@ -1,12 +1,7 @@
 <h1 *ngIf="isVisible">The Spot-List:🧑‍🎨 {{ spotlist }}</h1>
 
 <ul>
-  <li *ngFor="let spot of spotlists">
-    {{ spot.name.value }}
-    {{ spot.allowedVehicleType.value }}
-    {{ spot.status.value }}
-    {{ spot.availableSpotNumber.value }}
-    {{ spot.status.metadata.timestamp.value }}
-    <button (click)="sendMessage()">❤️</button>
+  <li class="item" *ngFor="let spot of spotlists">
+    <spotitem [spot]="spot"></spotitem>
   </li>
 </ul>
