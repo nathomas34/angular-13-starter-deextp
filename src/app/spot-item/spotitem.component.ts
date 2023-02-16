@@ -10,11 +10,7 @@ export class SpotitemComponent {
   @Input() spot: Spotlist;
   @Output() like = new EventEmitter<String>();
   ngOnChanges() {
-    if (
-      (this.spot.availableSpotNumber.value / this.spot.totalSpotNumber.value) *
-        100 <
-      25
-    ) {
+    if ((this.spot.availableSpotNumber.value / this.spot.totalSpotNumber.value) * 100 < 25) {
       console.log(
         ' the spot ',
         this.spot.name.value,
