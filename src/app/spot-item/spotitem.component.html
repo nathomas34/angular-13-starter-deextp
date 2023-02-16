@@ -18,7 +18,7 @@
         <td>{{ spot.availableSpotNumber.value }}</td>
         <td>{{ spot.status.metadata.timestamp.value }}</td>
         <td>
-          <button (click)="like.emit()">❤️</button>
+          <button (click)="like.emit(spot.name.value)">❤️</button>
         </td>
       </tr>
     </tbody>

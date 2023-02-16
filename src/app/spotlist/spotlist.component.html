@@ -2,6 +2,6 @@
 
 <ul>
   <li class="item" *ngFor="let spot of spotlists">
-    <spotitem [spot]="spot" (like)="sendMessage()"></spotitem>
+    <spotitem [spot]="spot" (like)="sendMessage(spot.name.value)"></spotitem>
   </li>
 </ul>
