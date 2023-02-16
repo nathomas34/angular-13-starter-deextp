@@ -2,14 +2,17 @@
   <table>
     <thead>
       <tr>
-        <th colspan="1">{{ spot.name.value }}</th>
+        <th colspan="1">Nom</th>
+        <th colspan="1">Etat</th>
         <th colspan="1">Véhicules</th>
         <th colspan="1">Places</th>
         <th colspan="1">Horaires</th>
+        <th colspan="1"></th>
       </tr>
     </thead>
     <tbody>
       <tr>
+        <td>{{ spot.name.value }}</td>
         <td>{{ spot.status.value }}</td>
         <td>{{ spot.allowedVehicleType.value }}</td>
         <td>{{ spot.availableSpotNumber.value }}</td>
